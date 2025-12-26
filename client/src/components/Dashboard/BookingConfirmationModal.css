@@ -1,0 +1,254 @@
+/* BookingConfirmationModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content.booking-confirmation-modal {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 550px; /* Wider for more content */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  max-height: 90vh; /* Allow scrolling for tall content */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2.2em; /* Larger 'x' */
+  cursor: pointer;
+  color: #888;
+  padding: 5px;
+  line-height: 1;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+/* Common Section Styling */
+.modal-section {
+  background-color: #f9fbfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Booking Summary Modal Specifics */
+.booking-summary-modal .summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 15px 20px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.summary-icon {
+  font-size: 1.5em;
+  color: #007bff;
+  line-height: 1;
+}
+
+.summary-item strong {
+  display: block; /* Make label appear above value */
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.summary-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.summary-item .sub-detail {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.vehicle-summary {
+  grid-column: 2 / 3; /* Position vehicle to the right column */
+  grid-row: 1 / span 2; /* Span two rows */
+}
+
+
+/* Parking Slot Details Modal Specifics */
+.parking-slot-details-modal .slot-details-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.slot-name-details {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.slot-features-details {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.slot-feature-tag-modal {
+  background-color: #e9f2ff;
+  color: #007bff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  white-space: nowrap;
+}
+
+.slot-rate-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rate-label {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.total-cost-details {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Payment Method Modal Specifics */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+  /* Style your radio buttons here if needed */
+  width: 18px;
+  height: 18px;
+}
+
+/* Cost Breakdown Modal Specifics */
+.cost-breakdown-modal .breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 1em;
+  color: #555;
+}
+
+.cost-breakdown-modal .total-amount-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #ddd;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Modal Actions (buttons) */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end; /* Pushes buttons to the right */
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.cancel-button {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 12px 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cancel-button:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+}
+
+.pay-confirm-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.pay-confirm-button:hover {
+  background-color: #0056b3;
+}
+
+.terms-conditions {
+  font-size: 0.8em;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+}

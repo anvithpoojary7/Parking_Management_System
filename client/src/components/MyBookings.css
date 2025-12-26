@@ -1,0 +1,101 @@
+.my-bookings {
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #555;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+}
+
+.booking-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: scale(1.01);
+}
+
+.booking-card.highlight {
+  border-left: 5px solid #3b82f6;
+}
+
+.booking-info {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.booking-image {
+  width: 48px;
+  height: 48px;
+  background: #ccc;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.booking-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.booking-info p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.end-button {
+  padding: 0.5rem 1.2rem;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.end-button:hover {
+  background-color: #dc2626;
+}

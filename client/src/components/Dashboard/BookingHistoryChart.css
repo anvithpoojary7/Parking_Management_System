@@ -1,0 +1,24 @@
+.chart-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  flex: 1;
+  min-width: 300px;
+}
+
+.chart-placeholder {
+  height: 180px;
+  background: repeating-linear-gradient(
+    45deg,
+    #e5e7eb,
+    #e5e7eb 10px,
+    #f9fafb 10px,
+    #f9fafb 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 14px;
+}

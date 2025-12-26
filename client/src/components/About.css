@@ -1,0 +1,69 @@
+.about-container {
+  padding: 60px 100px;
+  background-color: #fdfdfd;
+  min-height: 80vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.7;
+  max-width: 800px;
+  color: #444;
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.about-section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* ------------------------------
+   ✅ RESPONSIVE STYLES FOR MOBILE
+------------------------------ */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 40px 20px;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-description,
+  .about-section p,
+  .about-section ul {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .about-section h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

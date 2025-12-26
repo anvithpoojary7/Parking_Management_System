@@ -1,0 +1,124 @@
+/* File: src/components/Features.css */
+
+.features {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.heading{
+   text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.features h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #0b3558;
+  animation: slideDown 0.8s ease-in-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.feature-item {
+  background-color: #f8f8f8;
+  margin: 1rem auto;
+  max-width: 500px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: zoomIn 0.5s ease-in;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.feature-item strong {
+  font-size: 1.2rem;
+  display: block;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+  color: #555;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.btn-dark, .btn-light {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+  animation: fadeInUp 1s ease-in;
+}
+
+.btn-dark:hover {
+  background-color: #222;
+  transform: scale(1.05);
+}
+
+.btn-light {
+  background-color: #eaeaea;
+  color: #111;
+  animation: fadeInUp 1.2s ease-in;
+}
+
+.btn-light:hover {
+  background-color: #dcdcdc;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .features {
+    padding: 2rem 1rem;
+  }
+
+  .feature-item {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .features h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-dark, .btn-light {
+    display: block;
+    margin: 1rem auto;
+    width: 80%;
+  }
+}

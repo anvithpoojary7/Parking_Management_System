@@ -1,0 +1,26 @@
+.availability-result {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.available {
+  background-color: #e0ffe0;
+  color: #155724;
+}
+
+.not-available {
+  background-color: #ffe0e0;
+  color: #721c24;
+}
+
+.availability-result button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
