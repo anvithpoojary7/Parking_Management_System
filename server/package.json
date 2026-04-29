@@ -19,7 +19,7 @@
     "jsonwebtoken": "^9.0.2",
     "moment-timezone": "^0.6.0",
     "node-cron": "^4.2.1",
-    "nodemailer": "^7.0.6",
+    "nodemailer": "^7.1.0",
     "pg": "^8.16.0",
     "razorpay": "^2.9.6",
     "server": "file:",

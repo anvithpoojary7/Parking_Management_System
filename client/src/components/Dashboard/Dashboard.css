@@ -35,3 +35,7 @@
   margin-top: 20px;
   flex-wrap: wrap;
 }
+
+.dashboard-content {
+  padding-top: 110px;
+}
